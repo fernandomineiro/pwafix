@@ -1,0 +1,40 @@
+
+<main id="login" class="block">
+    <header> 
+        <span class="logo"><img src="assets/img/logo.svg" /></span>
+    </header>
+    <section>
+        <small>Bem-vindo ao</small>
+        <h1>Fix Soluções</h1>
+        <p>Faça seu login para acessar nosso app</p>
+        <form action=".">
+            <fieldset>
+                <label>
+                    <strong>Login</strong>
+                    <input id="usuariologin" name="usuariologin" type="text" placeholder="Login do usuário" [(ngModel)]="usuario.login" />
+                    <i class="fal fa-user"></i>
+                </label> 
+                <label>
+                    <strong>Senha</strong>
+                    <input id="senha" name="senha" type="password" placeholder="Digite aqui sua senha" [(ngModel)]="usuario.senha" />
+                    <sub>
+                        <a href="/trocar-senha" id ="titulosenha" title="Esqueceu a senha?">
+                            Esqueceu a senha?
+                        </a>
+                    </sub>
+                    <i class="fal fa-lock-alt"></i>
+                </label>
+                <label class="lbsubmit">
+                    <button (click)="realizarLogin()">Acessar <i class="fal fa-arrow-right"></i></button>
+                </label>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <span>
+            <a href="/cadastro" id="cadastro" title="Não possui cadastro? Clique aqui.">
+                Não possui cadastro? Clique aqui.
+            </a>
+        </span>
+    </footer>
+</main>
