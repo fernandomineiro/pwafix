@@ -13,7 +13,7 @@ const appRoute: Routes = [
     canActivate: [LoginGuard]
   },
   {
-    path: 'trocar-senha',
+    path: 'trocar-senha/:token',
     loadChildren: () => import('./aplicacao/pagina/esqueci-senha/module/trocar-senha.module').then(m => m.TrocarSenhaModule)
   },
   {

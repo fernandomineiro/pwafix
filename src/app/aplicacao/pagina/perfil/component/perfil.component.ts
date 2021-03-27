@@ -88,7 +88,7 @@ export class PerfilComponent implements OnInit {
     let message: Message[] = this.usuario.validarNovaSenha();
     const id = this.storageService.idusuario();
      if (message.length === 0) {
-       this.perfilService.updateSenha(id, this.usuario).subscribe((response)=>{
+       this.perfilService.updateSenha(id, this.usuario.novaSenha).subscribe((response)=>{
         // console.log(response);
         this.messageService.add({ severity: Severity.SUCCESS, summary: Summary.SUCCESS, detail: 'Senha atualizada com sucesso' });
       },(error) => {                              //Error callback

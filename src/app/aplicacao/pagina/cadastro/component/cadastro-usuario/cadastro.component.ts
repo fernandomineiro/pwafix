@@ -66,7 +66,7 @@ export class CadastroComponent implements OnInit {
   }
 
   public confirmarCadastro() {
-    
+    const a = '/login'
      if (this.validarTrocaSenha()) {
       this.cadastroService.createItem(this.novoUsuario).subscribe((response)=>{
       
@@ -74,7 +74,7 @@ export class CadastroComponent implements OnInit {
           this.messageService.add({ severity: Severity.SUCCESS, summary: Summary.SUCCESS, detail: "Cadastrado com sucesso" })
           // this.router.navigate(['/heroes']);
           setTimeout(function(){
-            this.router.navigate(['/login']);
+            this.router.navigate([a]);
         }, 3000);
         }else{
           this.messageService.add({ severity: Severity.ERROR, summary: Summary.ERROR, detail: response['resposta']})

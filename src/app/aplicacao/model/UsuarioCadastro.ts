@@ -21,6 +21,7 @@ export class UsuarioCadastro {
     endereco: string;
     tipoAcesso: EnumTipoAcesso;
     ativo: boolean;
+    email: string;
 
      public constructor(init?: Partial<UsuarioCadastro>) {
          Object.assign(this, init);
