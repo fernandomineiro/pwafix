@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  url: 'http://fixx.brazilvalle.com.br'
+  url: 'https://fixx.brazilvalle.com.br'
     
   
 };
