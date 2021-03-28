@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'https://lambafolia1-com.umbler.net'
+  url: 'https://start-kz3p.onrender.com'
   
 };
 
