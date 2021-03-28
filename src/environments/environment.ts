@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  url: 'https://fixx.brazilvalle.com.br'
+  production: true,
+  url: 'http://fixx.brazilvalle.com.br'
     
   
 };
