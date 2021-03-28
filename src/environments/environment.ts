@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  url: 'https://fixx.brazilvalle.com.br'
+  url: 'https://start-kz3p.onrender.com'
     
   
 };
