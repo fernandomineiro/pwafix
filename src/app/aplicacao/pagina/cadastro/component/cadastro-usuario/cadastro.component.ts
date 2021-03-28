@@ -73,9 +73,6 @@ export class CadastroComponent implements OnInit {
         if(response['resposta'] == 'ok'){
           this.messageService.add({ severity: Severity.SUCCESS, summary: Summary.SUCCESS, detail: "Cadastrado com sucesso" })
           // this.router.navigate(['/heroes']);
-          setTimeout(function(){
-            this.router.navigate([a]);
-        }, 3000);
         }else{
           this.messageService.add({ severity: Severity.ERROR, summary: Summary.ERROR, detail: response['resposta']})
         }
